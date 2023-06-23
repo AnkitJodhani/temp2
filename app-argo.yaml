@@ -11,7 +11,7 @@ spec:
     targetRevision: HEAD
     path: menifest
   destination: 
-    server: https://51FF5328AF4171F34711F9F809A3F0F2.gr7.us-east-1.eks.amazonaws.com
+    server: https://kubernetes.default.svc
     namespace: myapp
 
   syncPolicy:
