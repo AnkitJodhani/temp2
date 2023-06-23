@@ -14,11 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-<<<<<<< HEAD
         image: ankitjodhani/tic-tac-toe:build-6
-=======
-        image: ankitjodhani/tic-tac-toe:build-24
->>>>>>> 2d9c48a181e5203cc04160efb09001755f38ff6b
         ports:
         - containerPort: 80
 
