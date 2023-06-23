@@ -1,0 +1,24 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: myapp-argo-application
+  namespace: argocd
+spec:
+  project: default
+
+  source:
+    repoURL: https://github.com/AnkitJodhani/temp2.git
+    targetRevision: HEAD
+    path: /
+  destination: 
+    server: https://51FF5328AF4171F34711F9F809A3F0F2.gr7.us-east-1.eks.amazonaws.com
+    namespace: myapp
+
+  syncPolicy:
+    syncOptions:
+    - CreateNamespace=true
+
+    automated:
+      selfHeal: true
+      prune: true
+
