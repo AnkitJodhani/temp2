@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/AnkitJodhani/temp2.git
     targetRevision: HEAD
-    path: /
+    path: menifest
   destination: 
     server: https://51FF5328AF4171F34711F9F809A3F0F2.gr7.us-east-1.eks.amazonaws.com
     namespace: myapp
