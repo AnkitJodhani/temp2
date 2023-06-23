@@ -6,7 +6,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: ankitjodhani/tic-tac-toe:build-20
+        image: ankitjodhani/tic-tac-toe:build-6
         ports:
         - containerPort: 80
 
